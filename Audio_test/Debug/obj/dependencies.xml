@@ -76,7 +76,7 @@
       </source>
       <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="154f6a11529">
       </source>
-      <source file="..\..\..\stm32f4_discovery_audio_codec.h" lastModified="154f6d2d119">
+      <source file="..\..\..\stm32f4_discovery_audio_codec.h" lastModified="1550280f44e">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
@@ -91,7 +91,7 @@
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="154f6a10f56">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\stm32f4_discovery_audio_codec.c" lastModified="154f6e36ccc">
+      <source file="..\..\..\stm32f4_discovery_audio_codec.c" lastModified="1550280f439">
          <include file="..\..\..\stm32f4_discovery_audio_codec.h"/>
       </source>
       <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="154f6a10e27">

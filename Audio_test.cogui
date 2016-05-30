@@ -20,19 +20,18 @@
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="H:/Работа/4 курс/МП/Audio_test/Audio_test/Audio_test/main.c" title="main.c" tooltip="H:/Работа/4 курс/МП/Audio_test/Audio_test/Audio_test/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Audio_test/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="44" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1580" selectionTopPixel="345"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4_discovery_audio_codec.c" partName="stm32f4_discovery_audio_codec.c" path="H:/Работа/4 курс/МП/Audio_test/Audio_test/Audio_test/stm32f4_discovery_audio_codec.c" title="stm32f4_discovery_audio_codec.c" tooltip="H:/Работа/4 курс/МП/Audio_test/Audio_test/Audio_test/stm32f4_discovery_audio_codec.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Audio_test/stm32f4_discovery_audio_codec.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1308" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="5" selectionOffset="8454" selectionTopPixel="2820"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4_discovery_audio_codec.h" partName="stm32f4_discovery_audio_codec.h" path="H:/Работа/4 курс/МП/Audio_test/Audio_test/Audio_test/stm32f4_discovery_audio_codec.h" title="stm32f4_discovery_audio_codec.h" tooltip="H:/Работа/4 курс/МП/Audio_test/Audio_test/Audio_test/stm32f4_discovery_audio_codec.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Audio_test/stm32f4_discovery_audio_codec.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="14" selectionOffset="2011" selectionTopPixel="510"/>
+<editorState selectionHorizontalPixel="0" selectionLength="5" selectionOffset="894" selectionTopPixel="30"/>
 </editor>
-<editor id="org.coocox.builder.ui.editors.ConfigEditor" name="" partName="Configuration" title="Configuration" tooltip="" workbook="DefaultEditorWorkbook">
-<input factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory">
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
+<editor id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" partName="Repository" title="Repository" tooltip="Repository" workbook="DefaultEditorWorkbook">
+<input factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory">&#x0A;<subPage horizontalPosition="0" selectedItemId="524" subPageIndex="2" verticalPosition="1416"/>
 </input>
 </editor>
 </editors>
@@ -43,13 +42,13 @@
 <element path="/Audio_test"/>
 <element path="/Audio_test/syscalls"/>
 </expanded>
+<selection>
+<element path="/Audio_test"/>
+</selection>
 </viewState>
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -151,154 +150,166 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Audio_test/stm32f4_discovery_audio_codec.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Audio_test/stm32f4_discovery_audio_codec.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Audio_test/main.c"/>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
+</editor>
 <editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
 <subPage/>
 </editor>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
-</editor>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage">
-<org.coocox.welcome.ui.WelcomePage/>
-</editor>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
-</editor>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Audio_test/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Audio_test/cmsis_boot/system_stm32f4xx.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Audio_test/stm32f4_discovery_audio_codec.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Audio_test/stm32f4_discovery_audio_codec.h"/>
+<editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
+<subPage horizontalPosition="0" selectedItemId="524" subPageIndex="2" verticalPosition="1416"/>
+</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Audio_test/stm32f4_discovery_audio_codec.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Audio_test/stm32f4_discovery_audio_codec.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Audio_test/main.c"/>
 </editors>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="3233" y="70"/>
+<item historyLabel="Configuration" index="1"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1528" y="0"/>
 </item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="3506" y="0"/>
+<item historyLabel="Repository" index="2"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1528" y="0"/>
 </item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="5526" y="38"/>
+<item historyLabel="system_stm32f4xx.c" index="3">
+<position info="not_deleted" x="8825" y="10"/>
 </item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="3237" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="677" y="10"/>
 </item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="5670" y="0"/>
+<item historyLabel="stm32f4_discovery_audio_codec.c" index="4">
+<position info="not_deleted" x="1308" y="0"/>
 </item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1300" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1180" y="105"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position/>
-</item>
-<item historyLabel="main.c" index="2">
-<position/>
-</item>
-<item historyLabel="main.c" index="2">
-<position/>
-</item>
-<item historyLabel="main.c" index="2">
-<position/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1065" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1065" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1217" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1233" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1508" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1431" y="0"/>
-</item>
-<item historyLabel="stm32f4_discovery_audio_codec.c" index="0">
+<item historyLabel="stm32f4_discovery_audio_codec.c" index="4">
 <position info="not_deleted" x="1249" y="20"/>
 </item>
-<item historyLabel="stm32f4_discovery_audio_codec.h" index="1">
-<position info="not_deleted" x="2011" y="14"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1118" y="82"/>
 </item>
-<item historyLabel="stm32f4_discovery_audio_codec.c" index="0">
-<position info="not_deleted" x="1308" y="0"/>
+<item historyLabel="stm32f4_discovery_audio_codec.c" index="4">
+<position info="not_deleted" x="4496" y="41"/>
 </item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1431" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1118" y="82"/>
 </item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="564" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1872" y="0"/>
 </item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1376" y="0"/>
+<item historyLabel="stm32f4_discovery_audio_codec.c" index="4">
+<position info="not_deleted" x="7330" y="71"/>
 </item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1389" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1872" y="0"/>
 </item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="63" y="0"/>
+<item historyLabel="stm32f4_discovery_audio_codec.c" index="4">
+<position info="not_deleted" x="7504" y="38"/>
 </item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1425" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1872" y="0"/>
 </item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1420" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="653" y="0"/>
 </item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1412" y="0"/>
+<item historyLabel="stm32f4_discovery_audio_codec.c" index="4">
+<position info="not_deleted" x="279" y="43"/>
 </item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1427" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1748" y="0"/>
 </item>
-<item historyLabel="Repository" index="3"/>
-<item historyLabel="Configuration" index="4"/>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1382" y="0"/>
+<item historyLabel="stm32f4_discovery_audio_codec.c" index="4">
+<position info="not_deleted" x="279" y="43"/>
 </item>
-<item historyLabel="welcome" index="5"/>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1382" y="0"/>
+<item historyLabel="stm32f4_discovery_audio_codec.h" index="5">
+<position info="not_deleted" x="276" y="11"/>
 </item>
-<item historyLabel="Configuration" index="4"/>
-<item historyLabel="Repository" index="3"/>
-<item historyLabel="Configuration" index="4"/>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="17" y="0"/>
+<item historyLabel="stm32f4_discovery_audio_codec.c" index="4">
+<position info="not_deleted" x="279" y="43"/>
 </item>
-<item historyLabel="Configuration" index="4"/>
-<item historyLabel="Configuration" index="6"/>
-<item historyLabel="main.c" index="7">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="stm32f4_discovery_audio_codec.h" index="5">
+<position info="not_deleted" x="276" y="11"/>
 </item>
-<item historyLabel="Configuration" index="6"/>
-<item historyLabel="main.c" index="7">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1748" y="0"/>
+</item>
+<item historyLabel="stm32f4_discovery_audio_codec.h" index="5">
+<position info="not_deleted" x="276" y="11"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1388" y="0"/>
+</item>
+<item historyLabel="stm32f4_discovery_audio_codec.c" index="4">
+<position info="not_deleted" x="279" y="43"/>
+</item>
+<item historyLabel="stm32f4_discovery_audio_codec.h" index="5">
+<position info="not_deleted" x="991" y="0"/>
+</item>
+<item historyLabel="stm32f4_discovery_audio_codec.c" index="4">
+<position info="not_deleted" x="299" y="0"/>
+</item>
+<item historyLabel="stm32f4_discovery_audio_codec.h" index="5">
+<position info="not_deleted" x="334" y="1"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1388" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position/>
+</item>
+<item historyLabel="main.c" index="0">
+<position/>
+</item>
+<item historyLabel="Repository" index="6"/>
+<item historyLabel="main.c" index="0">
+<position/>
+</item>
+<item historyLabel="stm32f4_discovery_audio_codec.h" index="7">
+<position info="not_deleted" x="335" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1748" y="0"/>
+</item>
+<item historyLabel="stm32f4_discovery_audio_codec.h" index="7">
+<position/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1183" y="0"/>
+</item>
+<item historyLabel="stm32f4_discovery_audio_codec.h" index="7">
+<position/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1183" y="0"/>
 </item>
 <item historyLabel="stm32f4_discovery_audio_codec.c" index="8">
-<position info="not_deleted" x="1308" y="0"/>
+<position info="not_deleted" x="300" y="0"/>
 </item>
-<item historyLabel="main.c" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Configuration" index="6"/>
-<item historyLabel="main.c" index="7">
-<position info="not_deleted" x="1166" y="0"/>
+<item historyLabel="stm32f4_discovery_audio_codec.h" index="7">
+<position info="not_deleted" x="671" y="0"/>
 </item>
 <item historyLabel="stm32f4_discovery_audio_codec.c" index="8">
-<position info="not_deleted" x="1308" y="0"/>
+<position info="not_deleted" x="233" y="0"/>
 </item>
-<item historyLabel="stm32f4_discovery_audio_codec.h" index="9">
-<position info="not_deleted" x="2011" y="14"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="546" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="7">
-<position info="not_deleted" x="1166" y="0"/>
+<item historyLabel="stm32f4_discovery_audio_codec.c" index="8">
+<position info="not_deleted" x="233" y="0"/>
+</item>
+<item historyLabel="stm32f4_discovery_audio_codec.h" index="7">
+<position info="not_deleted" x="287" y="0"/>
+</item>
+<item historyLabel="stm32f4_discovery_audio_codec.c" index="8">
+<position info="not_deleted" x="8454" y="5"/>
+</item>
+<item historyLabel="stm32f4_discovery_audio_codec.h" index="7">
+<position info="not_deleted" x="287" y="0"/>
+</item>
+<item active="true" historyLabel="main.c" index="9">
+<position info="not_deleted" x="546" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -316,9 +327,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.h" tooltip="Audio_test/cmsis_boot/system_stm32f4xx.h">
 <persistable path="/Audio_test/cmsis_boot/system_stm32f4xx.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4_discovery_audio_codec.c" tooltip="Audio_test/stm32f4_discovery_audio_codec.c">
-<persistable path="/Audio_test/stm32f4_discovery_audio_codec.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Audio_test/main.c">
 <persistable path="/Audio_test/main.c"/>
@@ -347,8 +355,11 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_rcc.h" tooltip="Audio_test/cmsis_lib/include/stm32f4xx_rcc.h">
 <persistable path="/Audio_test/cmsis_lib/include/stm32f4xx_rcc.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4_discovery_audio_codec.c" tooltip="Audio_test/stm32f4_discovery_audio_codec.c">
-<persistable path="/Audio_test/stm32f4_discovery_audio_codec.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="hello_world_v2/main.c">
+<persistable path="/hello_world_v2/main.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.c" tooltip="Audio_test/cmsis_boot/system_stm32f4xx.c">
+<persistable path="/Audio_test/cmsis_boot/system_stm32f4xx.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4_discovery_audio_codec.c" tooltip="Audio_test/stm32f4_discovery_audio_codec.c">
 <persistable path="/Audio_test/stm32f4_discovery_audio_codec.c"/>

@@ -15,6 +15,7 @@
  */
 uint16_t Audio_buffer[SIZE*2];
 float fft_buffer[SIZE*2];
+
 //float mel_f[SIZE*2];
 void  FFT(float *Rdat, float *Idat, int N, int LogN, int Ft_Flag);
 
@@ -30,7 +31,7 @@ int main(void)
 						&Audio_buffer[SIZE], //указатель на второй буфер для записи
 						&Audio_buffer[SIZE], //указатель на первый буфер для воспроизведения
 						&Audio_buffer[0]);	//указатель на второй буфер для воспроизведения
-	Start_record(); //записк записи
+	Start_record(); //запуск записи
 	short i=0;
 	//возможно лишнее
 	//делаем копию буффера
@@ -46,6 +47,7 @@ int main(void)
 		log_expression=1+((FREQ/2)*i/(SIZE*2))/700.0;
 		fft_buffer[i]=1127*log10(log_expression);
 	}
+
 	//Start_playing(); //запуск воспроизведения
     while(1)
     {

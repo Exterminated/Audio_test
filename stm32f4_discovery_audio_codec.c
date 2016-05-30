@@ -187,14 +187,14 @@ void Player_config(int buf_size,uint16_t *First_buffer, uint16_t *Second_buffer)
 {
   GPIO_InitTypeDef GPIO_InitStructure;
   // Включаем тактирование DMA1 (Память -> ЦАП)
-  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA1 | RCC_AHB1Periph_GPIOA, ENABLE);
+  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA1 | RCC_AHB1Periph_GPIOD, ENABLE);
   // Включаем тактирование ЦАП
   RCC_APB1PeriphClockCmd(RCC_APB1Periph_DAC, ENABLE);
   // Настраиваем 5 вывод порта A как выход ЦАП
   GPIO_InitStructure.GPIO_Pin =  GPIO_Pin_5;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
   GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
-  GPIO_Init(GPIOA, &GPIO_InitStructure);
+  GPIO_Init(GPIOD, &GPIO_InitStructure);
   DAC_DeInit();
   // Настройка ЦАП и DMA из памяти в ЦАП
   DAC_player_config(buf_size,First_buffer,Second_buffer);
