@@ -14,10 +14,11 @@
  * с двойным буфером.
  */
 uint16_t Audio_buffer[SIZE*2];
-float fft_buffer[SIZE*2];
+//векторы распознаной фразы
+float C_l[SIZE*2];
 
-//float mel_f[SIZE*2];
 void  FFT(float *Rdat, float *Idat, int N, int LogN, int Ft_Flag);
+void calkulate_MEL_vector();
 
 int main(void)
 {
@@ -32,28 +33,41 @@ int main(void)
 						&Audio_buffer[SIZE], //указатель на первый буфер для воспроизведения
 						&Audio_buffer[0]);	//указатель на второй буфер для воспроизведения
 	Start_record(); //запуск записи
-	short i=0;
-	//возможно лишнее
-	//делаем копию буффера
-	for(i;i<SIZE*2;i++){
-		fft_buffer[i]=Audio_buffer[i];
-	}
-	//производим быстрое преобразование фурье
-	FFT(fft_buffer, NULL, 8, 3, FT_DIRECT);
-	i=0;
-	double_t log_expression=0.0;
-	//рассчет мел-фильтра
-	for(i;i<SIZE*2;i++){
-		log_expression=1+((FREQ/2)*i/(SIZE*2))/700.0;
-		fft_buffer[i]=1127*log10(log_expression);
-	}
-
+	calkulate_MEL_vector();
 	//Start_playing(); //запуск воспроизведения
     while(1)
     {
     }
 }
-
+void calkulate_MEL_vector(){
+	short i=0;
+		short N=SIZE*2;
+		float H_k[N];
+		float S_m[N];
+		float fft_buffer[N];
+		//возможно лишнее
+		//делаем копию буффера
+		for(i;i<N;i++){
+			fft_buffer[i]=Audio_buffer[i];
+		}
+		//производим быстрое преобразование фурье
+		FFT(fft_buffer, NULL, 8, 3, FT_DIRECT);
+		i=0;
+		double_t log_expression=0.0;
+		//рассчет мел-фильтра
+		for(i;i<N;i++){
+			//масштабирование
+			log_expression=1+((FREQ/2)*i/(N))/700.0;
+			//применение функции Хэминга, для сглаживания значений на границах
+			fft_buffer[i]=0.54-0.46*cosf(2*3.14*i/(N-1));
+			//собственно рассчет мэл-фильтра
+			H_k[i]=1127*log10(log_expression);
+			//применение фильтров
+			S_m[i]=log(abs(fft_buffer[i]*fft_buffer[i])*H_k[i]);
+			//косинусное преобразование
+			C_l[i]=S_m[i]*cosf(3.14*i*(i+0.5)/N);
+		}
+}
 //_________________________________________________________________________________________
 //_________________________________________________________________________________________
 //
